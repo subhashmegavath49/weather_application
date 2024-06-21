@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APPLICATION</title>
+    <link rel="shortcut icon" href="./asserts/favIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main id="main_container">
+        <section id="card_container">
+            <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchlocation" placeholder="Enter your location">
+                <input type="submit" value="Get Weather" id="btn">
+            </form>
+            <article id="location"><h1 id="loc">LOCATION NAME</h1></article>
+            <article id="img_container">
+                <img src="./asserts/favIcon.png" id="img" alt="" height="240px" width="220px">
+                <h1 id="weather_condition">NONE</h1>
+            </article>
+            <article id="temp_humid">
+                <aside id="temp">
+                    <h1 class="header head1 ">TEMPERATURE</h1>
+                    <p class="para para1 temp_value">0<sup>0</sup><big>C</big></p>
+                </aside>
+                <aside id="humid">
+                    <h1 class="header heade">HUMIDITY</h1>
+                    <p class="para para2 humid_value">KMPH</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
